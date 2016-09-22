@@ -12,43 +12,62 @@ import java.util.*;
 
 public class MorseCode
 {
+  // Creating Scanner object
   public static Scanner scan = new Scanner(System.in);
 
   public static void main(String[] args)
   {
+    // Printing info about program
     System.out.println("Morse code program by Andrew Bevelhymer");
+
+    // if no argument, print usage statement
     if (args.length < 1)
     {
       usage();
     }
+
+    // run encode method if -e is used as the argument
     if (args[0].equals("-e"))
     {
       encode();
     }
+
+    // run decode method if -d is the argument
     else if (args[0].equals("-d"))
     {
       decode();
     }
+
+    // if anything else is used as an argument, print the usage statement
     else
     {
       usage();
     }
   }
 
+  // Prints out a usage statement
   public static void usage()
   {
     System.out.println("usage: java MorseCode [-e, -d] < input file > output file");
   }
 
+  // Encodes (English to Morse)
   public static void encode()
   {
+    // Creating line
     String line = scan.nextLine();
+
+    // Creating array of strings using a space as the delimiter
     String[] character = line.split("");
+
+    // Loop through array
     for(int i = 0; i < character.length; i++)
     {
+      // getting letter
       String letter = character[i];
       letter = letter.toLowerCase();
 
+      // using switch to evaluate conditions of letter
       switch(letter)
       {
         case "a":
@@ -166,14 +185,22 @@ public class MorseCode
     }
   }
 
+  // Decodes (Morse to English)
   public static void decode()
   {
+    // Getting Line
     String line = scan.nextLine();
+
+    // Creating string array splitting line using space as a delimiter
     String[] character = line.split(" ");
+
+    // Loop through array
     for(int i = 0; i < character.length; i++)
     {
+      // Defining letter variable
       String letter = character[i];
-      letter = letter.toLowerCase();
+
+      // Using switch statemtent with letter as the condition
       switch(letter)
       {
         case ".-":
