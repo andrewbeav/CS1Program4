@@ -183,6 +183,8 @@ public class MorseCode
           break;
       }
     }
+    // Print blank line
+    System.out.println();
   }
 
   // Decodes (Morse to English)
@@ -330,5 +332,7 @@ public class MorseCode
         }
       }
     }
+    // Print blank line
+    System.out.println();
   }
 }

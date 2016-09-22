@@ -1,2 +1,2 @@
 Morse code program by Andrew Bevelhymer
- hi there you are awesome
+ hi there how are you
