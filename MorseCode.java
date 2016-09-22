@@ -192,128 +192,142 @@ public class MorseCode
     String line = scan.nextLine();
 
     // Creating string array splitting line using space as a delimiter
-    String[] character = line.split(" ");
+    String[] wordArr = line.split("  ");
 
-    // Loop through array
-    for(int i = 0; i < character.length; i++)
+    // Using nested loop to go through each letter in each word
+    for(int i = 0; i < wordArr.length; i++)
     {
-      // Defining letter variable
-      String letter = character[i];
 
-      // Using switch statemtent with letter as the condition
-      switch(letter)
+      // Getting word
+      String word = wordArr[i];
+
+      // Getting each character from word and storing it in an array
+      String[] character = word.split(" ");
+
+      // Printing space after every word
+      System.out.print(" ");
+
+      // Loop through character array
+      for(int j = 0; j < character.length; j++)
       {
-        case ".-":
-          System.out.print("a");
-          break;
-        case "-...":
-          System.out.print("b");
-          break;
-        case "-.-.":
-          System.out.print("c");
-          break;
-        case "-..":
-          System.out.print("d");
-          break;
-        case ".":
-          System.out.print("e");
-          break;
-        case "..-.":
-          System.out.print("f");
-          break;
-        case "--.":
-          System.out.print("g");
-          break;
-        case "....":
-          System.out.print("h");
-          break;
-        case "..":
-          System.out.print("i");
-          break;
-        case ".---":
-          System.out.print("j");
-          break;
-        case "-.-":
-          System.out.print("k");
-          break;
-        case ".-..":
-          System.out.print("l");
-          break;
-        case "--":
-          System.out.print("m");
-          break;
-        case "-.":
-          System.out.print("n");
-          break;
-        case "---":
-          System.out.print("o");
-          break;
-        case ".--.":
-          System.out.print("p");
-          break;
-        case "--.-":
-          System.out.print("q");
-          break;
-        case ".-.":
-          System.out.print("r");
-          break;
-        case "...":
-          System.out.print("s");
-          break;
-        case "-":
-          System.out.print("t");
-          break;
-        case "..-":
-          System.out.print("u");
-          break;
-        case "...-":
-          System.out.print("v");
-          break;
-        case ".--":
-          System.out.print("w");
-          break;
-        case "-..-":
-          System.out.print("x");
-          break;
-        case "-.--":
-          System.out.print("y");
-          break;
-        case "--..":
-          System.out.print("z");
-          break;
-        case ".----":
-          System.out.print("1");
-          break;
-        case "..---":
-          System.out.print("2");
-          break;
-        case "...--":
-          System.out.print("3");
-          break;
-        case "....-":
-          System.out.print("4");
-          break;
-        case ".....":
-          System.out.print("5");
-          break;
-        case "-....":
-          System.out.print("6");
-          break;
-        case "--...":
-          System.out.print("7");
-          break;
-        case "---..":
-          System.out.print("8");
-          break;
-        case "----.":
-          System.out.print("9");
-          break;
-        case "-----":
-          System.out.print("0");
-          break;
-        case " ":
-          System.out.print(" ");
-          break;
+        // Defining letter variable
+        String letter = character[j];
+
+        // Using switch statemtent with letter as the condition
+        switch(letter)
+        {
+          case ".-":
+            System.out.print("a");
+            break;
+          case "-...":
+            System.out.print("b");
+            break;
+          case "-.-.":
+            System.out.print("c");
+            break;
+          case "-..":
+            System.out.print("d");
+            break;
+          case ".":
+            System.out.print("e");
+            break;
+          case "..-.":
+            System.out.print("f");
+            break;
+          case "--.":
+            System.out.print("g");
+            break;
+          case "....":
+            System.out.print("h");
+            break;
+          case "..":
+            System.out.print("i");
+            break;
+          case ".---":
+            System.out.print("j");
+            break;
+          case "-.-":
+            System.out.print("k");
+            break;
+          case ".-..":
+            System.out.print("l");
+            break;
+          case "--":
+            System.out.print("m");
+            break;
+          case "-.":
+            System.out.print("n");
+            break;
+          case "---":
+            System.out.print("o");
+            break;
+          case ".--.":
+            System.out.print("p");
+            break;
+          case "--.-":
+            System.out.print("q");
+            break;
+          case ".-.":
+            System.out.print("r");
+            break;
+          case "...":
+            System.out.print("s");
+            break;
+          case "-":
+            System.out.print("t");
+            break;
+          case "..-":
+            System.out.print("u");
+            break;
+          case "...-":
+            System.out.print("v");
+            break;
+          case ".--":
+            System.out.print("w");
+            break;
+          case "-..-":
+            System.out.print("x");
+            break;
+          case "-.--":
+            System.out.print("y");
+            break;
+          case "--..":
+            System.out.print("z");
+            break;
+          case ".----":
+            System.out.print("1");
+            break;
+          case "..---":
+            System.out.print("2");
+            break;
+          case "...--":
+            System.out.print("3");
+            break;
+          case "....-":
+            System.out.print("4");
+            break;
+          case ".....":
+            System.out.print("5");
+            break;
+          case "-....":
+            System.out.print("6");
+            break;
+          case "--...":
+            System.out.print("7");
+            break;
+          case "---..":
+            System.out.print("8");
+            break;
+          case "----.":
+            System.out.print("9");
+            break;
+          case "-----":
+            System.out.print("0");
+            break;
+          case " ":
+            System.out.print(" ");
+            break;
+        }
       }
     }
   }
