@@ -143,7 +143,7 @@ public class MorseCode
           System.out.print("-..- ");
           break;
         case "y":
-          System.out.print(".-- ");
+          System.out.print("-.-- ");
           break;
         case "z":
           System.out.print("--.. ");
