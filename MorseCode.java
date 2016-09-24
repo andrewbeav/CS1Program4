@@ -208,8 +208,8 @@ public class MorseCode
       // Getting each character from word and storing it in an array
       String[] character = word.split(" ");
 
-      // Printing space after every word
-      System.out.print(" ");
+      // Printing space after every word (not before first word though)
+      if (i > 0) System.out.print(" ");
 
       // Loop through character array
       for(int j = 0; j < character.length; j++)
