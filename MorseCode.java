@@ -25,23 +25,25 @@ public class MorseCode
     {
       usage();
     }
-
-    // run encode method if -e is used as the argument
-    if (args[0].equals("-e"))
-    {
-      encode();
-    }
-
-    // run decode method if -d is the argument
-    else if (args[0].equals("-d"))
-    {
-      decode();
-    }
-
-    // if anything else is used as an argument, print the usage statement
     else
     {
-      usage();
+      // run encode method if -e is used as the argument
+      if (args[0].equals("-e"))
+      {
+        encode();
+      }
+
+      // run decode method if -d is the argument
+      else if (args[0].equals("-d"))
+      {
+        decode();
+      }
+
+      // if anything else is used as an argument, print the usage statement
+      else
+      {
+        usage();
+      }
     }
   }
 

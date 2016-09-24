@@ -1,2 +1,2 @@
 Morse code program by Andrew Bevelhymer
- hi there how are you
+ hi mom
