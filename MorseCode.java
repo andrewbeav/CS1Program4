@@ -8,7 +8,8 @@
 // Description: Encodes or decoded morse code
 // =========================================================================
 
-import java.util.*;
+// Import Scanner class
+import java.util.Scanner;
 
 public class MorseCode
 {
