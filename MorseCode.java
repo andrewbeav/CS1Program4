@@ -5,7 +5,7 @@
 // Andrew Bevelhymer
 // 61049
 //
-// Description: Encodes or decoded morse code
+// Description: Encodes or decodes morse code
 // =========================================================================
 
 // Import Scanner class
