@@ -87,7 +87,7 @@ public class MorseCode
       for (int j = 0; j < english.length; j++)
       {
         // if the index equals the letter print its morse equivalent
-        if (letter == english[j])
+        if (letter.equals(english[j]))
         {
           System.out.print(morse[j] + " ");
           break;
