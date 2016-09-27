@@ -83,6 +83,20 @@ public class MorseCode
       String letter = character[i];
       letter = letter.toLowerCase();
 
+      // Searching through english array to see if letter matches any of them
+      for (int j = 0; j < english.length; j++)
+      {
+        // if the index equals the letter print its morse equivalent
+        if (letter == english[j])
+        {
+          System.out.print(morse[j] + " ");
+          break;
+        }
+        else
+        {
+          continue;
+        }
+      }
     }
     // Print blank line
     System.out.println();
