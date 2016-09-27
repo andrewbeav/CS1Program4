@@ -16,6 +16,19 @@ public class MorseCode
   // Creating Scanner object
   public static Scanner scan = new Scanner(System.in);
 
+  // Creating array of english characters
+  public static String[] english = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+            "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
+            "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8",
+            "9", "0"};
+
+  // Creating array of morse characters
+  public static String[] morse = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.",
+            "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
+            "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",
+            "-.--", "--..", ".----", "..---", "...--", "....-", ".....",
+            "-....", "--...", "---..", "----.", "-----"};
+
   public static void main(String[] args)
   {
     // Printing info about program
@@ -62,19 +75,6 @@ public class MorseCode
 
     // Creating array of strings using a space as the delimiter
     String[] character = line.split("");
-
-    // Creating array of english characters
-    String[] english = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
-              "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
-              "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8",
-              "9", "0"};
-
-    // Creating array of morse characters
-    String[] morse = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.",
-              "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
-              "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",
-              "-.--", "--..", ".----", "..---", "...--", "....-", ".....",
-              "-....", "--...", "---..", "----.", "-----"};
 
     // Loop through array
     for (int i = 0; i < character.length; i++)
