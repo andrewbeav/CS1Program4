@@ -9,7 +9,7 @@
 // =========================================================================
 
 // Import Scanner class
-import java.util.Scanner;
+import java.util.*;
 
 public class MorseCode
 {
@@ -17,17 +17,17 @@ public class MorseCode
   public static Scanner scan = new Scanner(System.in);
 
   // Creating array of english characters
-  public static String[] english = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
-            "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
-            "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8",
-            "9", "0"};
+  public static String english = "abcdefghijklmnopqrstuvwxyz01234567890 ";
 
   // Creating array of morse characters
   public static String[] morse = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.",
             "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
             "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",
             "-.--", "--..", ".----", "..---", "...--", "....-", ".....",
-            "-....", "--...", "---..", "----.", "-----"};
+            "-....", "--...", "---..", "----.", "-----", "  "};
+
+  public static HashMap<Character, String> englishToMorse = new HashMap<>();
+  public static HashMap<String, Character> morseToEnglish = new HashMap<>();
 
   public static void main(String[] args)
   {
