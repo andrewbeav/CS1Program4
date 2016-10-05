@@ -17,7 +17,7 @@ public class MorseCode
   public static Scanner scan = new Scanner(System.in);
 
   // Creating array of english characters
-  public static String english = "abcdefghijklmnopqrstuvwxyz01234567890 ";
+  public static String english = "abcdefghijklmnopqrstuvwxyz1234567890 ";
 
   // Creating array of morse characters
   public static String[] morse = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.",
@@ -29,12 +29,22 @@ public class MorseCode
   public static HashMap<Character, String> englishToMorse = new HashMap<>();
   public static HashMap<String, Character> morseToEnglish = new HashMap<>();
 
+  // Method for putting characters in HashMaps
+  public static void putInHash()
+  {
+    for (int i = 0; i < english.length(); i++)
+    {
+      englishToMorse.put(english.charAt(i), morse[i]);
+      morseToEnglish.put(morse[i], english.charAt(i));
+    }
+  }
+
   public static void main(String[] args)
   {
     // Printing info about program
     System.out.println("Morse code program by Andrew Bevelhymer");
 
-    // if no argument, print usage statement
+    /*// if no argument, print usage statement
     if (args.length < 1)
     {
       usage();
@@ -58,7 +68,7 @@ public class MorseCode
       {
         usage();
       }
-    }
+    }*/
   }
 
   // Prints out a usage statement
@@ -67,7 +77,7 @@ public class MorseCode
     System.out.println("usage: java MorseCode [-e, -d] < input file > output file");
   }
 
-  // Encodes (English to Morse)
+  /*// Encodes (English to Morse)
   public static void encode()
   {
     // Creating line
@@ -153,5 +163,5 @@ public class MorseCode
     }
     // Print blank line
     System.out.println();
-  }
+  }*/
 }
